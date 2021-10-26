@@ -4,7 +4,7 @@ class Dictionary:
 
     def __init__(self, arrayLength=4) -> None:
         
-        # Create an array with None values
+        # Create an list with None values
         self.array = [None] * arrayLength
 
     def isDictionaryFull(self):
@@ -34,7 +34,7 @@ class Dictionary:
         oldSize = len(self.array)
         newArray = Dictionary(oldSize * 2)
 
-        # Iterate array
+        # Iterate list
         for idx in range(oldSize):
 
             # If element at index is a NoneType, skip it
